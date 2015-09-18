@@ -23,6 +23,7 @@ public class PicFrame extends JFrame {
     private Point tmp = null;
     private boolean isDragged = false;
     private JLabel pic;
+    int i=0;
  
     public PicFrame() {
         pic = new JLabel();
@@ -74,6 +75,7 @@ public class PicFrame extends JFrame {
     public Icon getIcon(String path) {
         URL url = PicFrame.class.getClassLoader().getResource(path);
         return new ImageIcon(url);
+       
     }
  
     public static void main(String[] args) {
